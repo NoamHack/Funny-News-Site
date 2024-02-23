@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+   <link href="StyleSheet.css" rel ="Stylesheet" />
+    <asp:ContentPlaceHolder id="head2" runat="server"></asp:ContentPlaceHolder>
+   
+    <style type="text/css">
+        .style1
+        {
+            background-color: #333399;
+            height: 41px;
+        }
+    </style>
+   
+</head>
+<body>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <table class="table">
+            <tr>
+                <td class="style1" colspan="2">
+                    <asp:ContentPlaceHolder id="headline" runat="server"></asp:ContentPlaceHolder>
+                    <script type="text/javascript">
+                        function deleteAccount() {
+                            window.location.replace("deleteQuery.aspx");
+                        }
+                        function logoff() {
+                            window.location.replace("logoff.aspx");
+                        }
+
+</script>
+    
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="side" style="font-size: 20px">
+                    <% =myTime %>​
+                    <br />
+                <%=name %>
+                &nbsp;<br />
+                    <ul>
+                            <input type="button" value="התנתק" onclick="logoff()" /><input 
+                            type="button" value="מחק חשבון" onclick="deleteAccount()" style="width: 85px" />
+<li><a href="HomePage.aspx">בית</a></li>
+                        <li><a href="News.aspx">הכתבות שלנו</a> </li>
+                        <li><a href="register.aspx">הירשם</a></li>
+                        <li><a href="login.aspx">התחבר</a></li>
+                        <li><a href="registeronly.aspx">כתבות לרשומים בלבד</a></li>
+                        <li><a href="quiz.aspx">האם אתה יהודי טוב?</a></li>
+                        <li><a href="admin.aspx">מנהלים בלבד</a></li>
+                    </ul>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    <p>
+                        &nbsp;</p>
+                    &nbsp;</td>
+                <td class="main">
+                     <asp:ContentPlaceHolder id="Main" runat="server"></asp:ContentPlaceHolder>&nbsp;</td>
+            </tr>
+        </table>
+</body>
+</html>

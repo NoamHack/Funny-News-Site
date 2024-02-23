@@ -1,0 +1,24 @@
+﻿body {
+}
+.side  
+{
+    background-color:#3366ff ;
+            width: 10%;
+            height: 675px;
+}
+.main
+{
+     background-color:#ffffe6;
+            width: auto;
+            height: 675px;
+}
+.HEADLINE
+{
+    background-color:#333399;
+   
+}
+.table
+{
+    width:100%;
+    height:auto;
+}
