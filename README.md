@@ -1,7 +1,7 @@
  # אתר חדשות מצחיקות 📰📰📰
 
 ## הקדמה:
-מסמך זה מתאר את השלבים הנדרשים וההסברים למפתחים כדי להגדיר ולהציג עמוד אינטרנט עם מצגת של תמונות וטקסט מתאים. העמוד הינו חלק מיישום ASP.NET המשתמש ב-MasterPage לתפרות עקביות.
+מסמך זה מתאר את השלבים הנדרשים וההסברים למפתחים כדי להגדיר ולהציג עמוד אינטרנט עם מצגת של תמונות וטקסט מתאים. העמוד הינו חלק מיישום ASP.NET המשתמש ב-MasterPage.
 
 #### דרישות קדם:
 - Visual Studio או IDE שכיח שתומך ב-ASP.NET Web Forms.
